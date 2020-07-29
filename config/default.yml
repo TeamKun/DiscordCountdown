@@ -1,0 +1,15 @@
+# ボットのトークン (環境変数 $DISCORD_TOKEN で指定可)
+token: ""
+
+# 言語 (en, ja)
+locale: ja
+
+# チェックタイミング (crontabのあれ)
+event: '* * * * *'
+
+# 発信するチャンネル (複数指定可)
+channels:
+  - guild: "000000000000000000" # DiscordサーバーID
+    channel: "000000000000000000" # DiscordチャンネルID
+    template: "{{remaining}} days left" # メッセージ (変数: remaining)
+    limit: 2021-01-01
